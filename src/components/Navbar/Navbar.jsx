@@ -1,5 +1,6 @@
 import { useState } from "react";
 import userImg from "../../assets/userProfile/user.png"
+import { IoIosNotificationsOutline } from "react-icons/io";
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -17,7 +18,7 @@ const Navbar = () => {
     return (
         <div>
             <nav className="bg-gray-800 md:px-20">
-                <div className="max-w-7xl mx-auto">
+                <div className=" mx-auto">
                     <div className="flex justify-between items-center h-16">
                         <div className="hidden md:block">
                             <div className="flex items-baseline space-x-4">
@@ -28,7 +29,8 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className="hidden md:block">
-                            <div className="ml-4 flex items-center md:ml-6 cursor-pointer">
+                            <div className="ml-4 flex gap-4 items-center md:ml-6 cursor-pointer">
+                                <p className="text-gray-400 text-2xl"><IoIosNotificationsOutline /></p>
                                 <img className="w-8 h-8 rounded-full" src={userImg} alt="" />
                             </div>
                         </div>

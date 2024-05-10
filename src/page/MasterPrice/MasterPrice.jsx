@@ -8,6 +8,7 @@ const MasterPrice = () => {
     const [titleData, setTitleData] = useState();
 
 
+
     const handaleFormSubit = async (event) => {
         event.preventDefault();
 
@@ -78,7 +79,6 @@ const MasterPrice = () => {
         setTitleData(titleInfoData)
 
     }
-    console.log(titleData)
 
     return (
         <div>
@@ -164,7 +164,7 @@ const MasterPrice = () => {
                         <div><input type="checkbox" className="mr-2" />Extra Options</div>
                         <div className="flex items-center gap-3">
                             Environment
-                            <input type="radio" name="radio" checked />Dummy
+                            <input type="radio" name="radio" defaultChecked />Dummy
                             <input type="radio" name="radio" />DDT
                         </div>
                         <button type="submit" className="bg-blue-900 md:w-32 w-full p-2 text-white font-bold">Search</button>

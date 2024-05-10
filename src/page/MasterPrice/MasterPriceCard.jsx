@@ -17,6 +17,7 @@ const MasterPriceCard = ({ items, titleDatas }) => {
                         </tr>
                     </thead>
                     <tbody>
+                        {/* all data maping and show  */}
                         {
                             items?.flightOffer.map((flightOfferData, index) =>
                                 <tr key={index} className="text-center bg-gray-50  ">
