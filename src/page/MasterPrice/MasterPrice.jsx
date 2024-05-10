@@ -1,23 +1,84 @@
+// import { useEffect } from "react";
+import { useState } from "react";
+import MasterPriceCard from "./MasterPriceCard";
+
 
 const MasterPrice = () => {
+    const [allData, setAllData] = useState();
+    const [titleData, setTitleData] = useState();
 
-    const handaleFormSubit = (event) => {
+
+    const handaleFormSubit = async (event) => {
         event.preventDefault();
-        const form = event.target;
-        const formData = {
-            lhr: form.lhr.value,
-            cdg: form.cdg.value,
-            date: form.date.value,
-            fDay: form.fDay.value,
-            tDay: form.tDay.value,
-            time: form.time.value,
-            adt: form.adt.value,
-            sit: form.sit.value,
-            radio: form.radio.value
 
-        }
-        console.log("data", formData)
+        await fetch("LHR_CDG_ADT1_TYPE_1.txt")
+            .then(res => res.json())
+            .then(data => setAllData(data))
+            .catch((error) => {
+                console.log(error.message)
+            })
+
+        // ******* give form to data and filtaring data and fetch data *******
+        // const form = event.target;
+        // const formData = {
+        //     lhr: form.lhr.value,
+        //     cdg: form.cdg.value,
+        //     date: form.date.value,
+        //     fDay: form.fDay.value,
+        //     tDay: form.tDay.value,
+        //     time: form.time.value,
+        //     adt: form.adt.value,
+        //     sit: form.sit.value,
+        //     radio: form.radio.value
+
+        // }
+
+        const titleInfoData = [
+            {
+                "id": 1,
+                "title": "FLIGHT"
+            },
+            {
+                "id": 2,
+                "title": "AIRCRAFT"
+            },
+            {
+                "id": 3,
+                "title": "SEAT"
+            },
+            {
+                "id": 4,
+                "title": "CLASS"
+            },
+            {
+                "id": 5,
+                "title": "FARE"
+            },
+            {
+                "id": 6,
+                "title": "ROUTE"
+            },
+            {
+                "id": 7,
+                "title": "DEPARTURE"
+            },
+            {
+                "id": 8,
+                "title": "ARRIVAL"
+            },
+            {
+                "id": 9,
+                "title": "DURATION"
+            },
+            {
+                "id": 10,
+                "title": "PRICE"
+            },
+        ];
+        setTitleData(titleInfoData)
+
     }
+    console.log(titleData)
 
     return (
         <div>
@@ -110,6 +171,10 @@ const MasterPrice = () => {
                     </div>
                 </form>
             </div>
+            <MasterPriceCard
+                items={allData}
+                titleDatas={titleData}
+            ></MasterPriceCard>
         </div >
     );
 };
