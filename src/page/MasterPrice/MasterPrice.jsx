@@ -152,7 +152,7 @@ const MasterPrice = () => {
                             <option value="4">4</option>
                         </select>
 
-                        <select name="sit" className=" rounded border-2 bg-white px-2 pt-1">
+                        <select name="sit" className=" rounded  border-2 bg-white px-2 pt-1">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -160,6 +160,7 @@ const MasterPrice = () => {
                         </select>
                     </div>
 
+                    {/* bottom chaeckbox */}
                     <div className="md:flex font-bold mx-10 md:mx-auto items-center space-y-3 justify-between border-b border-blue-300 pb-2  ">
                         <div><input type="checkbox" className="mr-2" />Extra Options</div>
                         <div className="flex items-center gap-3">
