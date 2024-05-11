@@ -26,8 +26,8 @@ Best Practices Implemented
 
 My Personal Progect
 ----------
-LiveLink: https://github.com/Rumon-Sarker/coffee-house-client
+LiveLink: https://regal-kulfi-0f1697.netlify.app/
 
-RepositoriesLink: https://regal-kulfi-0f1697.netlify.app/
+RepositoriesLink: https://github.com/Rumon-Sarker/coffee-house-client
 
 
