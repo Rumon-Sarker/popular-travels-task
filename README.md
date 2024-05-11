@@ -2,7 +2,8 @@
 Project Details
 ---------------------------
 
-ProjectName: popular-travels-task;
+Task ProjectName: Popular-Travels-Task;
+-
 
 LiveLink: https://popular-travels-task.vercel.app/
 
@@ -26,8 +27,21 @@ Best Practices Implemented
 
 My Personal Progect
 ----------
+1.Green Cofee House
+---
 LiveLink: https://regal-kulfi-0f1697.netlify.app/
 
-RepositoriesLink: https://github.com/Rumon-Sarker/coffee-house-client
+Client_RepositoriesLink: https://github.com/Rumon-Sarker/coffee-house-client
+
+Server_RepositoriesLink: https://github.com/Rumon-Sarker/coffee-house-server
+
+2.Diamond Shop
+   -----
+LiveLink: https://capable-gecko-140d75.netlify.app
+
+Client_RepositoriesLink: https://github.com/Rumon-Sarker/diamond-client
+
+Server_RepositoriesLink: https://github.com/Rumon-Sarker/diamond-server
+   
 
 
